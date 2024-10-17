@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi Mật Khẩu</title>
+    <link rel="stylesheet" href="style-dmk.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đổi Mật Khẩu</h2>
+        <form action="/doi-mat-khau" method="POST">
+            <div class="form-group">
+                <label for="current-password">Mật Khẩu Hiện Tại</label>
+                <input type="password" id="current-password" name="current-password" required>
+            </div>
+            <div class="form-group">
+                <label for="new-password">Mật Khẩu Mới</label>
+                <input type="password" id="new-password" name="new-password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Xác Nhận Mật Khẩu Mới</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">Đổi Mật Khẩu</button>
+        </form>
+    </div>
+</body>
+</html>

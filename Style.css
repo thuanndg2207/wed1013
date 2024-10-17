@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .top-right {
+    width: 400px;
+    height: 50px;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 30px;
+    text-align: center;
+}
+
+header .top-right a {
+    text-decoration: underline;
+    color: white;
+    line-height: 50px;
+    padding: 0 15px;
+    font-variant: small-caps;
+}
+
+header .company-info {
+    width: 350px;
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px orangered;
+}
+
+header .company-info h1 {
+    margin: 0;
+    font-variant: small-caps;
+    color: white;
+    font-size: 35px;
+    border-bottom: 1px dotted red;
+    text-shadow: 0 0 5px orangered;
+    text-align: center;
+}
+
+header .company-info h3 {
+    margin: 0;
+    color: orangered;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+nav.menu {
+    width: 100%;
+    height: 50px;
+    background-color: orangered;
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu>ul>li {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 50px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    background-color: orange;
+    color: red;
+    border-radius: 10px;
+}
+
+.menu .sub-menu {
+    position: absolute;
+    display: none;
+    background-color: orange;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 50px;
+    left: 0;
+    width: 150%;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+}
+
+.menu .sub-menu li {
+    border-bottom: 1px solid black;
+}
+
+article {
+    width: 70%;
+    float: left;
+    min-height: 500px;
+    margin-right: 2%;
+}
+
+aside {
+    width: 28%;
+    float: left;
+    background-color: skyblue;
+    min-height: 500px;
+    padding: 10px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    line-height: 150px;
+    text-align: center;
+    font-size: 26px;
+    font-variant: small-caps;
+    margin-top: 20px;
+}
+
+iframe[name="page"] {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    border: none;
+}
+
+ul.vmenu {
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+}
+
+ul.vmenu>li {
+    border-bottom: 1px dotted orangered;
+}
+
+ul.vmenu>li>a {
+    text-decoration: none;
+    line-height: 30px;
+    font-variant: small-caps;
+    color: white;
+    padding-left: 28px;
+    background: url('Image/Button.png') no-repeat left center;
+}
+
+ul.vmenu>li>a:hover {
+    text-decoration: underline;
+    background-color: orange;
+    display: block;
+    background: url('Image/Left.png') no-repeat left center;
+}
+.col-25 {
+    width: 40%;
+    float: left;
+}
+
+.prod {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+}
+
+.prod .name {
+    font-variant: small-caps;
+    color: orangered;
+    font-size: 18px;
+}
+
+.prod .image {
+    max-width: 98%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.prod .price {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: orange;
+}
+
+.prod .icons {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prod .icon {
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+.prod .new-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: auto;
+}
